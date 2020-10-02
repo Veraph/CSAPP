@@ -11,6 +11,7 @@ void show_bytes(byte_pointer start, size_t len) {
 }
 
 void show_int(int x) {
+    /* (byte_pointer) here is the cast operator */
     show_bytes((byte_pointer) &x, sizeof(int));
 }
 
